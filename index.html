@@ -11,7 +11,7 @@
   <body>
     <!-- Header Part -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="" />
@@ -33,13 +33,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#Shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#Backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#Subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -219,7 +219,7 @@
       </section>
 
       <!-- Shoes -->
-      <section class="container">
+      <section class="container" id="Shoes">
         <h1>Shoes</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -284,7 +284,7 @@
         </div>
       </section>
       <!-- Backpack -->
-      <section class="container my-3">
+      <section class="container my-3" id="Backpack">
         <h1>Bagpack</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -337,9 +337,40 @@
         </div>
       </section>
       <!-- Subscriber -->
-      
+      <section
+        style="height: 200px"
+        class="
+          container
+          d-flex
+          rounded-3
+          align-items-center
+          justify-content-center
+          bg-primary
+        "
+        id="Subscribe"
+      >
+        <div class="">
+          <h1>LET'S STAY IN TOUCH</h1>
+          <p class="mb-0">GET DATES ON SALES , SPECIALS AND MORE</p>
+          <!-- <input class="mt-1" type="text" placeholder="Your Email" /><br /> -->
+          <input
+            class="form-control form-control-small w-50"
+            type="text"
+            placeholder="Your Email"
+            aria-label=".form-control-lg example"
+          />
+          <button class="btn btn-warning mt-1">Submit</button>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="text-center my-3">
+      <p>
+        <small
+          >&#169; 2020. Panda Commerce.All rights reserved by Rasehdul islam,
+          Bangladesh</small
+        >
+      </p>
+    </footer>
     <!-- Bootstrap Script -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
